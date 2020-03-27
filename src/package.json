@@ -1,0 +1,52 @@
+{
+  "name": "push-notitifation",
+  "version": "0.0.1",
+  "description": "basic push notification app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development && npm run start",
+    "build": "webpack --mode production",
+    "start": "node --experimental-modules index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maxy4u/push-notification-basic.git"
+  },
+  "keywords": [
+    "push",
+    "notification",
+    "basic",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Gaurav Khurana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxy4u/push-notification-basic/issues"
+  },
+  "homepage": "https://github.com/maxy4u/push-notification-basic#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-static": "^1.2.5",
+    "web-push": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
