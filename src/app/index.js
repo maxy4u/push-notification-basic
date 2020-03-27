@@ -5,7 +5,6 @@ require.context("./images", true, /^\.\//);
 
 if (navigator.serviceWorker) {
   try {
-    debugger;
     registerWorker();
   } catch (e) {
     console.error(e);

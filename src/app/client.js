@@ -2,7 +2,6 @@ const publicVapIdKey =
   "BANTtJrNWwtEdLIDx4pAsQ-DinEwECtKYu0hEPpKh8xrbhIuV-b-EThZE2dcnWBakPdDONoVxbQCJPB-c2sIm94";
 
 function urlBase64ToUint8Array(base64String) {
-  debugger;
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
   const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
 
@@ -16,7 +15,6 @@ function urlBase64ToUint8Array(base64String) {
 }
 
 const registerWorker = async () => {
-  debugger;
   console.info("Registering Service Worker");
   const registeration = await navigator.serviceWorker.register("./worker.js", {
     scope: "/"
